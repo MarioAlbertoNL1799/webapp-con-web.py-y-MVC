@@ -1,0 +1,22 @@
+$def with(datos)
+<a href="/"></a><h1>Actualizar Producto</h1>
+
+<form method="POST">
+  <label for="codigo">Codigo</label>
+  <input type="text" readonly="true" name="codigo" id="codigo" value="$datos.codigo">
+  <label for="nombre">Nombre</label>
+  <input type="text" value="$datos.nombre" id="nombre" name="nombre">
+  <br>
+  <label for="marca">Marca</label>
+  <input type="text" value="$datos.marca" id="marca" name="marca">
+  <br>
+  <label for="categoria">Categoria</label>
+  <input type="text" value="$datos.categoria" id="categoria" name="categoria">
+  <br>
+  <label for="precio">Precio</label>
+  <input type="text" name="precio" value="$datos.precio" id="precio">
+  <br>
+  <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
+<br>
+<a href="/productos"><button type="button" name="button" class="btn btn-primary">Cancelar</button></a>

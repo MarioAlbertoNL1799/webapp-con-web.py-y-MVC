@@ -1,0 +1,22 @@
+$def with(datos)
+<a href="/"></a><h1>Actualizar Cliente</h1>
+
+<form method="POST">
+  <label for="id">Id</label>
+  <input type="text" readonly="true" name="id" id="id" value="$datos.id">
+  <label for="nombre">Nombre</label>
+  <input type="text" value="$datos.nombre" id="nombre" name="nombre">
+  <br>
+  <label for="apellidos">Apellidos</label>
+  <input type="text" value="$datos.apellidos" id="apellidos" name="apellidos">
+  <br>
+  <label for="correo">Correo</label>
+  <input type="email" value="$datos.correo" id="correo" name="correo">
+  <br>
+  <label for="telefono">Telefono</label>
+  <input type="text" name="telefono" value="$datos.telefono" id="telefono">
+  <br>
+  <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
+<br>
+<a href="/clientes" >Cancelar</a>

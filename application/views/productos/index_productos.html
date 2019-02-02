@@ -1,0 +1,25 @@
+$def with(datos)
+
+<h1>Registros productos</h1>
+
+<table>
+    <th>Codigo</th>
+    <th>Nombre</th>
+    <th>Marca</th>
+    <th>Categoria</th>
+    <th>Precio</th>
+    <th>Actualizar</th>
+    <th>Eliminar</th>
+    $for row in datos:
+        <tr>
+            <td>$row.codigo</td>
+            <td>$row.nombre</td>
+            <td>$row.marca</td>
+            <td>$row.categoria</td>
+            <td>$row.precio</td>
+            <td><a href="/productos/update/$row.codigo">Actualizar</a></td>
+            <td><a href="/productos/delete/$row.codigo">Borrar</a></td>
+        </tr>
+</table>
+<br>
+<a href="/productos/insert"><button type="button" class="btn btn-primary">Agregar producto</button></a>
